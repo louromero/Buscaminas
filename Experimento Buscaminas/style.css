@@ -1,0 +1,95 @@
+body{
+    font-size:23px;
+}
+#juego{
+    width: 50%;
+    margin-left: 25%;
+    padding: 18px;
+    text-align:center;
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: white;
+}
+.puntos{
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    padding: 30px 24px 30px 0px;
+}
+.perdiste{
+    font-weight: bold;
+    font-size: 45px;
+    padding:26px;
+    color:#832727;
+}
+#tabla{
+    width: 60%;
+    margin:auto;
+    text-align: center;
+}
+#bomba{
+    max-width: 330px;
+}
+.buscaminas{
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(5,70px); /*Hace que la tabla este en 5x5*/
+    grid-template-rows: repeat(5,70px);
+    
+}
+button:hover {
+    background-color: #a0ddc9;
+    
+}
+
+.botones{
+    cursor:pointer;
+    margin: 1px;
+    transition: background-color;
+}
+.boton_nuevo{
+    margin-top:10%;
+    cursor:pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Boton para ver las reglas*/
+.espacio {
+    margin: 15px;
+}
+
+.boton {
+    left: 80%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+/*Reglas*/
+.centro {
+    text-align: center;
+    font-size: 26px;
+}
+.reglas {
+    width: 35%;
+    padding-left: 30px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.section1 {
+    background-color: rgb(232, 248, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/*Cambiar color- tamaño*/
+.cambiar_color {
+    width: 36px;
+    position: absolute;
+    left: 90%;
+    top: 4%;
+    cursor:pointer;
+}

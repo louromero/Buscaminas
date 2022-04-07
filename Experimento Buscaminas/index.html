@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Buscaminas</title>
+        <link rel="icon" type="image/x-icon" href="img/icono.png">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+            body{
+                background-color: rgb(209,235,255);
+            }
+            button{
+                background-color:rgb(209,255,240);
+            }
+        </style>
+    </head>
+    <body>
+
+        <a href="reglas.html">
+            <button class="boton">
+                <p class="espacio">Reglas</p>
+            </button>
+        </a>
+
+        <p title="Toca para cambiar el color de la página" onclick="cambiarColor()"><img class="cambiar_color" src="img/pintar.png"></p>
+
+        <h1 id= "juego">BUSCAMINAS</h1>
+
+
+        <table id="tabla" >
+            <tr class="info">
+                <td class="perdiste" id="perdiste"></td>
+                <td class= "puntos" id="puntos">PUNTOS: </td>
+            </tr>
+
+            <tr>
+                <td><img class="img" id="bomba" src="img/bomba.png"></td>
+                <td class="buscaminas">
+                    <button class="botones" id="1-1" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="1-2" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="1-3" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="1-4" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="1-5" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="2-1" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="2-2" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="2-3" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="2-4" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="2-5" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="3-1" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="3-2" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="3-3" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="3-4" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="3-5" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="4-1" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="4-2" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="4-3" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="4-4" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="4-5" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="5-1" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="5-2" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="5-3" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="5-4" onclick="buscar(this.id)"></button>
+                    <button class="botones" id="5-5" onclick="buscar(this.id)"></button> 
+                </td>
+            </tr>
+
+            <tr>
+                <!--Cargar de nuevo la pagina para volver a jugar-->
+                <td><button class="boton_nuevo" onclick="location.reload()"><p>NUEVA PARTIDA!</p></button></td>
+                <!--Boton para cambiar de color la página
+                <td title="Toca para cambiar el color de la página" onclick="cambiarColor()"><img class="cambiar_color" src="img/pintar.png"></td>-->
+            </tr>
+
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+</html>
